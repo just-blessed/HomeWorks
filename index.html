@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homeWorks</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/homeWorks.png" alt="Logo">
+    </a>
+</header>
+<section class="main-content">
+    <div class="container main-content-container">
+        <div class="main-content-left-side">
+            <h1>Get your free account</h1>
+            <div class="main-content-text" id="main-text">
+                Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+            </div>
+            <div class="main-content-inputs">
+                <form action="" class="authorization-form" id="form">
+                    <label  class="input-container" for="fullName">
+                        Full Name
+                        <input type="text" id="fullName" class="input" name="fullName" required>
+                        <span class="error">Full Name может содержать только буквы и пробел</span>
+                    </label>
+                    <label class="input-container" for="userName">
+                        Your username
+                        <input type="text" id="userName" class="input" name="userName" required>
+                        <span class="error">Your username - может содержать только буквы, цифры, символ подчеркивания и тире</span>
+                    </label>
+                    <label class="input-container" for="email">
+                        E-mail
+                        <input type="email" id="email" class="input" name="email"  required>
+                        <span class="error">Заполните поле E-mail</span>
+                    </label>
+                    <label class="input-container" for="password">
+                        Password
+                        <input type="password" id="password" class="input" name="password"required>
+                        <span class="error">Пароль должен содержать минимум 8 символов</span>
+                    </label>
+                    <label class="input-container" for="repeatPassword">
+                        Repeat Password
+                        <input type="password" id="repeatPassword" class="input" name="repeatPassword" required>
+                        <span class="error"> Password и Repeat Password должны совпадать</span>
+                    </label>
+
+
+                    <label class="main-content-last-text">
+                        <input type="checkbox" id="policy" class="six-input " name="policy">
+                        Agree to our Terms of Service and Privacy Statement
+                        <span class="error main-content-last-text-error">Необходимо принять условие</span>
+                    </label>
+                    <button type="button" class="btn" id="button">Sign Up</button>
+                </form>
+            </div>
+
+            <div class="have-account">
+                <a href="#" id="haveAcc">Already have an account?</a>
+            </div>
+        </div>
+        <div class="main-content-right-side">
+            <img src="images/Rocket.png" alt="Rocket">
+        </div>
+    </div>
+
+    <div class="popup-container" id="popup">
+
+        <div class="popup">
+            <div class="popup-image">
+                <img src="images/homeWorks.png" alt="popupImage">
+            </div>
+            <div class="popup-text">На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию</div>
+            <button class="button btn" id="btn-popUp">OK</button>
+
+        </div>
+    </div>
+</section>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
+
+

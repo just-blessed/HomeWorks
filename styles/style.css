@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: NunitoBold;
+    src: url("../fonts/Nunito-Bold.ttf");
+}
+@font-face {
+    font-family: NunitoExtraBold;
+    src: url("../fonts/Nunito-ExtraBold.ttf");
+}
+@font-face {
+    font-family: NunitoRegular;
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+@font-face {
+    font-family: NunitoSemiBold;
+    src: url("../fonts/Nunito-SemiBold.ttf");
+}
+body {
+    background: linear-gradient(to right, white 50%, #b7b7b7 50%);
+    font-family: NunitoBold, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 27px;
+    padding-bottom: 112px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    position: absolute;
+    left: 642px;
+}
+
+.logo {
+    margin-left: -6px;
+}
+
+.main-content-container {
+    display: flex;
+}
+.main-content-left-side {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    padding-left: 63px;
+}
+.main-content-left-side h1 {
+    font-size: 36px;
+    line-height: 49px;
+    max-width: 496px;
+    height: 56px;
+}
+
+.main-content-text {
+    width: 496px;
+    height: 81px;
+    font-size: 22px;
+    line-height: 27px;
+    color: #636363;
+}
+
+
+.authorization-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    max-width: 452px;
+}
+
+.input-container {
+    font-size: 16px;
+    color: #C6C6C4;
+}
+
+.input {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 27px;
+    border: transparent;
+    border-bottom: 1px solid #a1a19e;
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.authorization-form .inputs:last-child {
+    margin-bottom: 0;
+}
+
+span .error {
+    display: flex;
+}
+
+.error {
+    font-size: 10px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #e31919;
+    display: none;
+}
+
+.main-content-last-text-error {
+    margin-top: 0;
+}
+
+
+.main-content-last-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    margin-bottom: 40px;
+    width: 420px;
+    height: 25px;
+}
+
+.main-content-last-text .six-input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 27px;
+    width: 210px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: #DD3142;
+    color: #f6f6f6;
+    /*margin-bottom: 44px;*/
+    border: transparent;
+    cursor: pointer;
+    margin-left: 130px;
+}
+
+
+.have-account a {
+    padding-top: 36px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    padding-left: 140px;
+
+}
+
+
+.main-content-right-side {
+    margin-top: 60px;
+}
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(to right, white 50%, #b7b7b7 50%);
+    border: 1px solid black;
+    padding: 20px 15px 30px 15px;
+    top: calc(55% - 60px);
+    left: calc(35% - 94px);
+}
+
+.popup-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 10px;
+    height: 50px;
+    width: 20%;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.popup-image {
+    padding-bottom: 10px;
+    text-align: center;
+}
